@@ -1,0 +1,44 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: Loanstreet_API
+    Description: all the lambdas that run Loan street
+    Author: Konstantino Sparakis
+    SpdxLicenseId: Private
+    ReadmeUrl: README.md
+    Labels: ['tests']
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://gitlab.com/ksparakis
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 15
+    MemorySize: 512
+
+Resources:
+  createLoan:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: pyless/lambdas/create_loan.lambda_handler
+      Runtime: python3.7
+      Description: ''
+      CodeUri:
+  updateLoan:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: pyless/lambdas/update_loan.lambda_handler
+      Runtime: python3.7
+      Description: ''
+      CodeUri:
+  getLoan:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: pyless/lambdas/get_loan.lambda_handler
+      Runtime: python3.7
+      Description: ''
+      CodeUri:
+
