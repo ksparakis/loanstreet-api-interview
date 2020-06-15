@@ -8,4 +8,4 @@ my framework is called pyless, and designed to make building api's quickly from 
 
 
 Running live at:
-https://o7nhypit90.execute-api.us-east-1.amazonaws.com/prod
+https://o7nhypit90.execute-api.us-east-1.amazonaws.com/prod/loans
