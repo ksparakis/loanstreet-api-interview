@@ -1,4 +1,4 @@
-# Loanstreet Interview
+# Loanstreet challange
 
 Used a dumbed down version of my custom framework to build an AWS serverless api.
 
@@ -9,3 +9,12 @@ my framework is called pyless, and designed to make building api's quickly from 
 
 Running live at:
 https://o7nhypit90.execute-api.us-east-1.amazonaws.com/prod/loans
+
+POST
+- create a loan
+
+PUT
+- update a loan
+
+Get 
+- Get a loan by id
